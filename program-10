@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+#include <conio.h>
+class cs
+{int x;
+int y;
+public:
+	void display()
+	{cout<<"x is="<<x<<endl;
+	cout<<"y is ="<<y<<endl;
+	}
+	cs()
+	{x=-2;
+	y=-2;
+	}
+	cs(int a)
+	{x=a;
+	}
+	cs (int a,int b)
+	{x=a;
+	y=b;
+	}
+};
+
+int main()
+{cs a1(-2,-2);
+a1.display();
+cs a2(50);
+a2.display();
+cs a3(44,46);
+a3.display();
+return 0;
+}
