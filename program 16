@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+class alpha
+{
+	char a,b;
+	public:
+		void letter(char m, char n)
+		{
+			a=m;
+			b=n;
+			
+		}
+		alpha operator +()
+		{
+			alpha object;
+			object.a=(int) a+1;
+			object.b=(int) b+1;
+			return(object);
+		}
+		void display()
+		{
+			cout<<"alphabet after increment is :"<<a<<endl;
+			cout<<"alphabet after increment is :"<<b<<endl;
+		}
+};
+int main()
+{
+	alpha obj1;
+	char m,n;
+	cout<<"enter a capital letter:"<<endl;
+	cin>>m;
+	cout<<"enter a small letter:"<<endl;
+	cin>>n;
+	obj1.letter(m,n);
+	alpha obj2=(+obj1);
+	obj2.display();
+	return 0;
+}
