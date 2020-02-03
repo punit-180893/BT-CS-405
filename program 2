@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+#include<conio.h>
+class square
+{int z;
+int multi;
+public:
+	void get();
+	void multiply();
+	void display();
+	
+};
+inline void square::get()
+{cout<<"enter the number"<<endl;
+cin>>z;
+}
+inline void square::multiply()
+{multi=z*z;
+}
+inline void square::display()
+{cout<<"square of the number="<<multi;
+}
+int main()
+{square a1;
+a1.get();
+a1.multiply();
+a1.display();
+return 0;
+}
